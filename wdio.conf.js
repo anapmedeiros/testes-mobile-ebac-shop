@@ -16,8 +16,8 @@ exports.config = {
         "app": join(process.cwd(), './app/android/wcandroid-8.7.apk'),
         "appWaitActivity": 'com.woocommerce.android.ui.login.LoginActivity'
         }],
-        waitForTimeout: 500000,
+        waitForTimeout: 10000000,
         mochaOpts: {
-            timeout: 500000
+            timeout: 10000000
         }
 }
