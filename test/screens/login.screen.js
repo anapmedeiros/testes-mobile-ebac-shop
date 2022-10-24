@@ -1,7 +1,7 @@
 class LoginScreen {
      get storeAddress(){ return $('android.widget.EditText')  }
        get continue() { return $('id:bottom_button') }
-       get continueWithStoreCredentialsButton() { return $('id:login_site_creds') }
+       get #continueWithStoreCredentialsButton() { return $('id:login_site_creds') }
        get username() { return $('android=new UiSelector().text("Username")') }
        get password() { return $('android=new UiSelector().text("Password")') }
        get twoFactorPasswordBtn() { return $('id:login_enter_password')}
@@ -15,7 +15,7 @@ class LoginScreen {
         }
 
      async continueWithStoreCredentials() {
-             await this.#continueStoreCredentialsButton.waitForExist({ timeout: 900000 })
+             await this.#continueWithStoreCredentialsButton.waitForExist({ timeout: 2000000000 })
              await this.#continueWithStoreCredentialsButton.click()
          }
 
